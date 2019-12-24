@@ -8,10 +8,8 @@
  */
 
 const seatsInTheatre = (nCols, nRows, col, row) => {
-  const totalSeats = nCols * nRows;
   const y = nCols - col;
   const x = nRows - row;
-
   return (y + 1) * x;
 };
 

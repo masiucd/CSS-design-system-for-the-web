@@ -1,7 +1,5 @@
 function maxMultiple(divisor: number, bound: number): number {
   const x = bound % divisor;
-
-  console.log(x);
   return bound - x;
 }
 
