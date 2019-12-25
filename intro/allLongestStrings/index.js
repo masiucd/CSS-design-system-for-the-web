@@ -34,6 +34,7 @@ function allLongestStrings(inputArray) {
     }
   }
 
+  // Make loop outside the first loop so the longest count is finished and stays at the right value
   for (let val of inputArray) {
     if (val.length === longest) {
       res.push(val);
