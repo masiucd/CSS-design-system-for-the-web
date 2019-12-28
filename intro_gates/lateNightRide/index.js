@@ -1,18 +1,5 @@
 /**
  *
- * @param {number} min
- * @returns {string}
- */
-const getTime = min => {
-  const x = min / 60;
-  return x.toFixed(2);
-};
-
-// console.log(getTime(240));
-// console.log(getTime(808));
-
-/**
- *
  * @param {number} n
  * @returns {number}
  */
@@ -20,13 +7,15 @@ function lateRide(n) {
   const h = n / 60;
   const min = n % 60;
 
-  const res = h / 10 + (h % 10) + min / 10 + (min % 10);
-  // return Math.floor(res);
-  return h / 10 + (h % 10) + (min / 10 + (min % 10));
+  const res =
+    Math.floor(h / 10) + (h % 10) + Math.floor(min / 10) + Math.floor(min % 10);
+
+  return Math.floor(res);
 }
 
-console.log(lateRide(240)); // 4
+// console.log(lateRide(240)); // 4
 console.log(lateRide(808)); // 14
+console.log(lateRide(1439)); // 19
 
 /**
  * For n = 240, the output should be
