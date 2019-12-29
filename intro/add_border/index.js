@@ -5,9 +5,7 @@
  * @returns {string[]}
  */
 
-//  if 3 tehn add 2
-// always add to stars
-function addBorder(picture) {
+function addBorderX(picture) {
   let stars = '';
 
   for (let i = 0; i < picture[0].length + 2; i += 1) {
@@ -20,6 +18,12 @@ function addBorder(picture) {
   }
 
   return res;
+}
+
+function addBorder(picture) {
+  let stars = '*'.repeat(picture[0].length + 2);
+
+  return [stars, ...picture.map(x => `*${x}*`), stars];
 }
 
 const picture = ['abc', 'ded'];
