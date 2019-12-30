@@ -7,12 +7,17 @@
  * @returns {boolean}
  */
 function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
-  const yourStronges = Math.max(yourLeft, yourRight);
+  const yourStrongest = Math.max(yourLeft, yourRight);
   const friendsStrongest = Math.max(friendsLeft, friendsRight);
   const friendsWeakest = Math.min(friendsLeft, friendsRight);
   const yourWeakest = Math.min(yourLeft, yourRight);
 
-  return yourStronges === friendsStrongest && yourWeakest === friendsWeakest;
+  return yourStrongest === friendsStrongest && yourWeakest === friendsWeakest;
 }
 
-console.log(areEquallyStrong(0, 10, 10, 0)); // true
+function areEquallyStrong2(yourLeft, yourRight, friendsLeft, friendsRight) {
+  const me = [yourLeft, yourRight].sort().join('');
+  const friend = [friendsLeft, friendsRight].sort().join('');
+
+  return me === friend;
+}
