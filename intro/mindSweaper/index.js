@@ -15,26 +15,68 @@ function minesweeper(matrix) {
 
   // const foo = new Array(45).fill([]); // create an empty array with length 45
 
-  const arr = [];
-  for (let i = 0; i < matrix.length; i++) {
-    arr.push([]);
-    for (let j = 0; j < matrix[i].length; j++) {
-      arr[i][j] = 0;
+  const newArr = [];
 
-      if (matrix[i][j - 1] === true) {
-        arr[i][j] += 1;
-      }
-      if (matrix[i][j + 1] !== undefined) {
-        if (matrix[i][j + 1] === true) {
-          arr[i][j] += 1;
+  for (let i = 0; i < matrix.length; i++) {
+    newArr.push([]);
+    for (let j = 0; j < matrix[i].length; j++) {
+      let cnt = 0;
+      if (i > 0) {
+        if (matrix[i - 1][j]) {
+          cnt += 1;
+        }
+        if (matrix[i - 1][j + 1]) {
+          cnt += 1;
+        }
+        if (matrix[i - 1][j - 1]) {
+          cnt += 1;
         }
       }
+      if (i < matrix.length - 1) {
+        if (matrix[i + 1][j]) {
+          cnt += 1;
+        }
+        if (matrix[i + 1][j + 1]) {
+          cnt += 1;
+        }
+        if (matrix[i + 1][j - 1]) {
+          cnt += 1;
+        }
+      }
+
+      if (matrix[i][j + 1]) {
+        cnt += 1;
+      }
+      if (matrix[i][j - 1]) {
+        cnt += 1;
+      }
+      newArr[i].push(cnt);
     }
   }
-
-  console.log(arr);
+  return newArr;
 }
 
+const directions = [
+  [1, -1],
+  [1, 0],
+  [1, 1],
+  [0, -1],
+  [0, 1],
+  [-1, -1],
+  [-1, 0],
+  [-1, 1],
+];
+
+minesweeper2 = matrix =>
+  matrix.map((row, y) =>
+    row.map((col, x) =>
+      directions.reduce(
+        (count, i) =>
+          (count += !!(matrix[y + i[0]] && matrix[y + i[0]][x + i[1]])),
+        0
+      )
+    )
+  );
 const a = [
   [true, false, false],
   [false, true, false],
