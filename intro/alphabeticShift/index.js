@@ -29,3 +29,9 @@ function alphabeticShift(inputString) {
 
 console.log(alphabeticShift('crazy'));
 // dsbaz
+
+const alphabeticShift2 = inputString =>
+  inputString
+    .split('')
+    .map(el => (el === 'z' ? 'a' : String.fromCharCode(el.charCodeAt() + 1)))
+    .join('');

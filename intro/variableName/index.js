@@ -28,7 +28,6 @@ function variableName(name) {
   // }
   // return true;
 
-  // const reg = /^[a-z_]\w*$/.test(name);
   return /^[a-z_]\w*$/i.test(name);
 
   // return reg;
