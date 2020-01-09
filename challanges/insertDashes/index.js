@@ -41,23 +41,26 @@ function insertDashes(inputString) {
 
   // return res.slice(0, res.length - 1);
 
-  const reg = /^[A-Za-z]+$/;
-  let letters = [];
-  let spaceIndex = [];
-  for (let i = 0; i < inputString.length; i++) {
-    if (inputString[i].match(reg)) {
-      letters.push(inputString[i]);
-    }
-    if (inputString[i] === ' ') {
-      spaceIndex.push(i);
-    }
-  }
+  // const reg = /^[A-Za-z]+$/;
+  // let letters = [];
+  // let spaceIndex = [];
+  // for (let i = 0; i < inputString.length; i++) {
+  //   if (inputString[i].match(reg)) {
+  //     letters.push(inputString[i]);
+  //   }
+  //   if (inputString[i] === ' ') {
+  //     spaceIndex.push(i);
+  //   }
+  // }
 
-  // let alpha = reg.test(x);
-  const letterWithDashes = letters.map(x => `${x}-`);
-  console.log(letterWithDashes);
+  // // let alpha = reg.test(x);
+  // const letterWithDashes = letters.map(x => `${x}-`);
+
   // console.log(spaceIndex);
 }
+
+const insertDashes2 = i => i.replace(/\B/g, '-');
+const insertDashes3 = i => i.replace(/(\w)(?=\w)/g, '$1-');
 
 console.log(insertDashes('aba caba')); // "a-b-a c-a-b-a"
 // console.log(insertDashes('aba caba sadsa sdasdasda sdasdas'));
