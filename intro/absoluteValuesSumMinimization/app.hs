@@ -1,0 +1,1 @@
+absoluteValuesSumMinimization a = a !! (div (length a - 1) 2)
