@@ -1,0 +1,13 @@
+{
+  "name": "trees",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.2.6"
+  }
+}
