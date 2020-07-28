@@ -1,5 +1,5 @@
 function adjacentElementsProduct(inputArray: number[]): number {
-  let highest = 0;
+  let highest = -Infinity;
   for (let i = 0; i < inputArray.length - 1; i++) {
     let left = inputArray[i];
     let right = inputArray[i + 1];
