@@ -12,7 +12,9 @@ Coding challenges from different platforms like, Code signal, code wars, hacker 
 
 ### Coding Challenges includes
 
-- shapeArea 🏟
-- palindrome 📭
-- adjacentElementProduct λ
-- makeArrayConsecutive2 🌟
+* shapeArea 🏟
+* palindrome 📭
+* adjacentElementProduct λ
+* makeArrayConsecutive2 🌟
+* almostIncreasingSequence 📲
+* sortedSquaredArray 🧙🏻‍♂️
