@@ -20,3 +20,4 @@ Coding challenges from different platforms like, Code signal, code wars, hacker 
 * sortedSquaredArray 🧙🏻‍♂️
 * allLongestStrings 🤥
 * commonCharacterCount 🚙
+* isLucky ✌🏼
