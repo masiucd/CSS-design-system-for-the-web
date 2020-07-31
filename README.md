@@ -18,3 +18,5 @@ Coding challenges from different platforms like, Code signal, code wars, hacker 
 * makeArrayConsecutive2 🌟
 * almostIncreasingSequence 📲
 * sortedSquaredArray 🧙🏻‍♂️
+* allLongestStrings 🤥
+* commonCharacterCount 🚙
