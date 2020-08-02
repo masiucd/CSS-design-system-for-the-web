@@ -22,3 +22,4 @@ Coding challenges from different platforms like, Code signal, code wars, hacker 
 * commonCharacterCount 🚙
 * isLucky ✌🏼
 * reverseInParentheses ◀️
+* alternatingSums ∑
