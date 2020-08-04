@@ -6,7 +6,6 @@
 - [Getting Started](#getting_started)
 - [Web apps](#web)
 - [Tasks](#tasks)
-- [Contributing](../CONTRIBUTING.md)
 
 ## About <a name = "about"></a>
 
@@ -83,4 +82,5 @@ export { sortedSquaredArray };
 - alternatingSums ∑
 - addBorder  🐫
 - arrSimilar  👯‍♂️
-- arrayChange  👯‍♂️
+- arrayChange  🎗
+- fearNoLetter  😰
