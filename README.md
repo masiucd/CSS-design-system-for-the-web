@@ -84,3 +84,4 @@ export { sortedSquaredArray };
 - arrSimilar  👯‍♂️
 - arrayChange  🎗
 - fearNoLetter  😰
+- convertHtml  ꄭ
