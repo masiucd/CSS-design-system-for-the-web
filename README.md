@@ -85,3 +85,4 @@ export { sortedSquaredArray };
 - arrayChange  🎗
 - fearNoLetter  😰
 - convertHtml  ꄭ
+- spinalCase  ꄭ
