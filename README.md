@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Web apps](#web)
-- [Tasks](#tasks)
+* [About](#about)
+* [Getting Started](#getting_started)
+* [Web apps](#web)
+* [Tasks](#tasks)
 
 ## About <a name = "about"></a>
 
@@ -15,13 +15,12 @@ Coding challenges from different platforms like, Code signal, code wars, hacker 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-```bash
+``` bash
   git clone <Project url>
 
   cd into project
 
   yarn/npm install
-
 
 ```
 
@@ -31,13 +30,13 @@ Have Fun !
 
 What things you need to install the software and how to install them.
 
-```
+``` 
   Node >= 8
 ```
 
 ### Some Algos λ👨🏻‍💻😎
 
-```ts
+``` ts
 function allLongestStrings(inputArray: string[]) {
   let xs = inputArray.map((val, index) => val.length);
 
@@ -59,30 +58,31 @@ export { sortedSquaredArray };
 
 ## Web apps <a name = "web"></a>
 
-- [codesignal](https://app.codesignal.com/)
+* [codesignal](https://app.codesignal.com/)
 
-- [hackerrank](https://www.hackerrank.com/)
+* [hackerrank](https://www.hackerrank.com/)
 
-- [leetcode](https://leetcode.com/)
+* [leetcode](https://leetcode.com/)
 
-- [codewars](https://www.codewars.com/)
+* [codewars](https://www.codewars.com/)
 
 ### Coding Challenges includes <a name = "tasks" ></a>
 
-- shapeArea 🏟
-- palindrome 📭
-- adjacentElementProduct λ
-- makeArrayConsecutive2 🌟
-- almostIncreasingSequence 📲
-- sortedSquaredArray 🧙🏻‍♂️
-- allLongestStrings 🤥
-- commonCharacterCount 🚙
-- isLucky ✌🏼
-- reverseInParentheses ◀️
-- alternatingSums ∑
-- addBorder  🐫
-- arrSimilar  👯‍♂️
-- arrayChange  🎗
-- fearNoLetter  😰
-- convertHtml  ꄭ
-- spinalCase  ꄭ
+* shapeArea 🏟
+* palindrome 📭
+* adjacentElementProduct λ
+* makeArrayConsecutive2 🌟
+* almostIncreasingSequence 📲
+* sortedSquaredArray 🧙🏻‍♂️
+* allLongestStrings 🤥
+* commonCharacterCount 🚙
+* isLucky ✌🏼
+* reverseInParentheses ◀️
+* alternatingSums ∑
+* addBorder  🐫
+* arrSimilar  👯‍♂️
+* arrayChange  🎗
+* fearNoLetter  😰
+* convertHtml  ꄭ
+* spinalCase  🐞
+* palindromeRerange  😝
