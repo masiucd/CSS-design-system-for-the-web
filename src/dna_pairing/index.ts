@@ -1,4 +1,4 @@
-function pairElement(str: string) {
+export function pairElement(str: string) {
   const pair = (input: string) => {
     switch (input) {
       case "A":
@@ -22,7 +22,7 @@ function pairElement(str: string) {
   return res;
 }
 
-function pairElement2(str: string) {
+export function pairElement2(str: string) {
   const pair = (input: string) => {
     switch (input) {
       case "A":
@@ -43,4 +43,4 @@ function pairElement2(str: string) {
   return res;
 }
 
-pairElement2("GCG");
+// pairElement2("GCG");
