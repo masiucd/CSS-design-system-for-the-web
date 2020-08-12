@@ -16,4 +16,4 @@ export function translatePigLatin(str: string): string {
 
 // console.log(translatePigLatin("consonant"));
 // console.log(translatePigLatin("apa"));
-console.log(translatePigLatin("glove"));
+// console.log(translatePigLatin("glove"));
