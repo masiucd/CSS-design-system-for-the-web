@@ -12,6 +12,7 @@ function sumFibs(num: number): number {
   return res;
 }
 
+export { sumFibs };
 // console.log(sumFibs(4));
 // console.log(sumFibs(7));
 // console.log(sumFibs(1000));
