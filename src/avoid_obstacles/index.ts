@@ -23,6 +23,6 @@ function avoidObstacles2(arr: number[]) {
 
 // console.log(avoidObstacles([5, 3, 6, 7, 9]));
 // console.log(avoidObstacles([2, 3]));
-console.log(avoidObstacles2([1, 4, 10, 6, 2]));
+// console.log(avoidObstacles2([1, 4, 10, 6, 2]));
 
 export { avoidObstacles, avoidObstacles2 };
