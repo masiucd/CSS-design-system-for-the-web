@@ -89,3 +89,4 @@ export { sortedSquaredArray };
 * pigLatin  🐽
 * search and replace  🦖
 * isIPv4Address2  🖥
+* smallestCommon  🧮
