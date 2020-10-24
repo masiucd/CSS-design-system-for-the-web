@@ -1,4 +1,4 @@
-const fn = (arr: number[]): number => {
+export const fn = (arr: number[]): number => {
   const map = arr.reduce((obj: Record<string, number>, val) => {
     if (!obj[val]) {
       obj[val] = 1
@@ -13,9 +13,6 @@ const fn = (arr: number[]): number => {
   )
 
   let tracker = 0
-  // for (let i = 0; i < arr.length; i++) {
-  //   if (Number(frequentNumberInTheMap) !== arr[i]) tracker++
-  // }
 
   for (let [index, val] of arr.entries()) {
     if (Number(frequentNumberInTheMap) !== val) tracker++
@@ -23,10 +20,3 @@ const fn = (arr: number[]): number => {
 
   return tracker
 }
-
-let arr = [1, 2, 3, 1, 2, 3, 3, 3]
-// let arr = [3, 3, 2, 1, 3]
-// let arr = [3, 3, 2, 1, 2, 2]
-
-const printFn = fn(arr)
-console.log(printFn)
