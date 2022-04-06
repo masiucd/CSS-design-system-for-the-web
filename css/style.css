@@ -1,0 +1,20 @@
+:root {
+  /* Base colors */
+  --yellow-100: #eab308;
+  --yellow-200: #ca8a04;
+  --black: #000000;
+  --white: #fff;
+  --gray-10: #f3f4f6;
+  --gray-20: #e5e7eb;
+  --gray-50: #d1d5db;
+  --gray-100: #64748b;
+  --gray-200: #94a3b8;
+  --gray-300: #9ca3af;
+  --gray-400: #6b7280;
+  --gray-500: #4b5563;
+  --blue-100: #334155;
+  --blue-200: #1e293b;
+  --blue-300: #0f172a;
+  --green: #16a34a;
+  --red: #dc2626;
+}

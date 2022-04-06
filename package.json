@@ -1,8 +1,11 @@
 {
-  "name": " ",
+  "name": "system",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": [
+    "css",
+    "system"
+  ],
   "license": "",
   "author": "",
   "scripts": {
