@@ -52,3 +52,10 @@ For example:
 
 The first selector will be applied since it has an higher specificity value where we go three levels.
 So `.header` with background `#eee212` will never be applied in this case.
+
+### Typography
+
+Recommended sites for typography.
+
+- [type scale](https://www.type-scale.com)
+- [font pair](https://www.fontpair.co)
