@@ -23,10 +23,22 @@
   --text: var(--blue-200);
   --border-color: var(--yellow-200);
   --box-background: var(--gray-10);
+  --line-color: var(--gray-50);
+  --border-color: var(--yellow-200);
+
+  /* Styles */
 
   /* fonts */
   --body-font: "IBM Plex Mono", monospace;
   --header-font: "IBM Plex Serif", serif;
+
+  /* fonts */
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --smallText: 0.8em;
 }
 
 *::after,
@@ -48,10 +60,16 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--text);
+  padding-bottom: 400px;
 }
 
 p {
   margin-bottom: 1rem;
+}
+
+p a,
+blockquote a {
+  text-decoration: none;
 }
 
 h1,
@@ -67,23 +85,23 @@ h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.052rem;
+  font-size: var(--h1);
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: var(--h2);
 }
 
 h3 {
-  font-size: 1.953rem;
+  font-size: var(--h3);
 }
 
 h4 {
-  font-size: 1.563rem;
+  font-size: var(--h4);
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: var(--h5);
 }
 
 small,
@@ -130,4 +148,37 @@ blockquote {
   font-size: 1.25rem;
   line-height: 1.5;
   background-color: var(--box-background);
+}
+
+/* form */
+form {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.form-group {
+  padding: 0.4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+select,
+textarea,
+button[type="submit"] {
+  border-radius: 4px;
+  border: 2px solid var(--border-color);
+  padding: 0.3em 0.5em;
+}
+.form-group button[type="submit"] {
+  background-color: var(--yellow-100);
+  color: var(--background);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.2em 0.1em;
+  margin-top: 0.5em;
+  width: 12em;
+  cursor: pointer;
 }
