@@ -19,9 +19,10 @@
   --red: #dc2626;
 
   /* Colors intentions */
-  --background: var(--blue-200);
-  --text: var(--white);
+  --background: var(--white);
+  --text: var(--blue-200);
   --border-color: var(--yellow-200);
+  --box-background: var(--gray-10);
 
   /* fonts */
   --body-font: "IBM Plex Mono", monospace;
@@ -100,13 +101,10 @@ body {
 
 /* For dark theme */
 .dark {
-  --background: var(--white);
-  --text: var(--blue-200);
-  --border-color: var(--yellow-100);
-}
-.light {
   --background: var(--blue-200);
   --text: var(--white);
+  --border-color: var(--yellow-100);
+  --box-background: var(--blue-100);
 }
 
 .main {
@@ -131,4 +129,5 @@ blockquote {
   font-style: italic;
   font-size: 1.25rem;
   line-height: 1.5;
+  background-color: var(--box-background);
 }

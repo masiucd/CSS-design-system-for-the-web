@@ -1,26 +1,37 @@
 ;(() => {
   const toggleButton = document.querySelector(".toggle-button")
-  const theme = localStorage.getItem("theme")
-  const checkTheme = () => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("theme", "dark")
-      toggleButton.textContent = "🌙"
-    } else {
-      toggleButton.textContent = "☀️"
-    }
-  }
-  // Initial run
+  let theme = localStorage.getItem("theme")
 
-  checkTheme()
+  const enableDarkTheme = () => {
+    document.body.classList.add("dark")
+    toggleButton.textContent = "🌙"
+    localStorage.setItem("theme", "dark")
+  }
+  const disableDarkMode = () => {
+    document.body.classList.remove("dark")
+    toggleButton.textContent = "🌞"
+    localStorage.setItem("theme", "light")
+  }
+
+  if (theme === "dark") {
+    enableDarkTheme()
+  }
+
   toggleButton.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark")
-    let theme = "light"
-    if (document.documentElement.classList.contains("dark")) {
-      theme = "dark"
-      toggleButton.textContent = "🌙"
+    theme = localStorage.getItem("theme")
+    if (theme === "dark") {
+      disableDarkMode()
     } else {
-      toggleButton.textContent = "☀️"
+      enableDarkTheme()
     }
-    localStorage.setItem("theme", theme)
+    // let theme = "light"
+    // if (document.documentElement.classList.contains("dark")) {
+    //   theme = "dark"
+    //   toggleButton.textContent = "🌙"
+    // } else {
+    //   toggleButton.textContent = "☀️"
+    // }
+    // document.documentElement.classList.toggle("dark")
+    // localStorage.setItem("theme", theme)
   })
 })()
