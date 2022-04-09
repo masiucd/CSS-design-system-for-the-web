@@ -1,26 +1,26 @@
-const getFromStorage = key => localStorage.getItem(key)
-const storeTheme = (key, value) => {
-  localStorage.setItem(key, value)
-}
 ;(() => {
   const toggleButton = document.querySelector(".toggle-button")
-  if (!theme) {
-    storeTheme("theme", "light")
-  }
   const theme = localStorage.getItem("theme")
-
-  toggleButton.addEventListener("click", () => {
-    if (theme === "light") {
-      localStorage.removeItem("theme")
-      storeTheme("theme", "dark")
-      document.body.classList.toggle("dark")
+  const checkTheme = () => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("theme", "dark")
+      toggleButton.textContent = "🌙"
     } else {
-      localStorage.removeItem("theme")
-      storeTheme("theme", "light")
-      document.body.classList.toggle("light")
+      toggleButton.textContent = "☀️"
     }
+  }
+  // Initial run
 
-    console.log({theme})
-    // toggle the class of the body
+  checkTheme()
+  toggleButton.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark")
+    let theme = "light"
+    if (document.documentElement.classList.contains("dark")) {
+      theme = "dark"
+      toggleButton.textContent = "🌙"
+    } else {
+      toggleButton.textContent = "☀️"
+    }
+    localStorage.setItem("theme", theme)
   })
 })()

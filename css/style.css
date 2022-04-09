@@ -21,6 +21,7 @@
   /* Colors intentions */
   --background: var(--blue-200);
   --text: var(--white);
+  --border-color: var(--yellow-200);
 
   /* fonts */
   --body-font: "IBM Plex Mono", monospace;
@@ -101,8 +102,33 @@ body {
 .dark {
   --background: var(--white);
   --text: var(--blue-200);
+  --border-color: var(--yellow-100);
 }
 .light {
   --background: var(--blue-200);
   --text: var(--white);
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+a {
+  color: var(--text);
+  border-bottom: 2px solid var(--border-color);
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+blockquote {
+  border-left: 1px solid var(--yellow-200);
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }

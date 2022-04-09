@@ -27,29 +27,128 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <h1>Design system CSS</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla quod dolore expedita
-      ipsum incidunt dolorum sapiente ut est ad, provident fugiat, veritatis asperiores ex! Quisquam
-      minima voluptatum voluptate sequi praesentium similique, iste sit in totam cum, eaque vel fuga
-      quidem non corrupti, aut maiores numquam cumque quae mollitia ea ducimus veritatis recusandae
-      nulla? Qui beatae blanditiis corporis, illo numquam nemo nulla sint. Ipsam iste similique
-      necessitatibus porro qui, eius dignissimos amet, quisquam assumenda vitae accusantium quos
-      quas temporibus vero eligendi, tenetur est expedita cupiditate! Perferendis, molestias atque
-      quos pariatur tempora aliquid inventore vitae fugit libero minus commodi eum architecto labore
-      fugiat. Vero odio similique laboriosam veritatis pariatur dicta, praesentium, commodi quasi
-      doloribus ex maxime ipsa quisquam itaque labore suscipit velit illum id? Delectus cum
-      molestias aliquid impedit quae illo sequi dolore, vitae odio, iusto neque? Odio at quibusdam
-      sit aliquam necessitatibus repellendus officiis aperiam amet neque molestiae, tempora
-      recusandae beatae quas tenetur quam laudantium dignissimos consequuntur natus. Dicta,
-      necessitatibus excepturi. A molestiae in sed, unde ducimus illum. Quam dolores debitis illo.
-    </p>
-    <ul>
-      <li>Legia</li>
-      <li>CWKS</li>
-      <li>1916</li>
-    </ul>
-    <button class="toggle-button" data-theme="theme">toggle theme</button>
+    <main class="main">
+      <button class="toggle-button" data-theme="theme">toggle theme</button>
+      <h1>Design system CSS</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla
+        <a href="https://developer.mozilla.org/en-US/">quod dolore expedita</a>
+        ipsum incidunt dolorum sapiente ut est ad, provident fugiat, veritatis
+        asperiores ex! Quisquam minima voluptatum voluptate sequi praesentium
+        similique, iste sit in totam cum, eaque vel fuga quidem non corrupti,
+        aut maiores numquam cumque quae mollitia ea ducimus veritatis recusandae
+        nulla? Qui beatae blanditiis corporis, illo numquam nemo nulla sint.
+        Ipsam iste similique necessitatibus porro qui, eius dignissimos amet,
+        quisquam assumenda vitae accusantium quos qua.
+      </p>
+
+      <h2>Title 2</h2>
+      <h3>Title 3</h3>
+      <h4>Title 4</h4>
+      <h5>Title 5</h5>
+      <h6>Title 6</h6>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro
+        consequatur iste omnis quo maxime saepe, et corrupti corporis deserunt,
+        doloremque praesentium quam adipisci at quibusdam. Inventore iusto quas
+        alias, exercitationem voluptatem cupiditate voluptate vero similique
+        <strong>
+          fuga veniam earum incidunt quibusdam explicabo ratione reiciendis
+          natus
+        </strong>
+        adipisci ipsa molestias delectus veritatis sapiente vel rerum sed? Quod
+        soluta voluptatem voluptas, modi totam asperiores nisi quia fugit
+        sapiente neque, corporis suscipit! Corrupti vero eius, similique
+        accusantium porro libero laboriosam nostrum architecto ipsam laudantium
+        ratione officiis eum iusto numquam quis est mollitia suscipit, provident
+        non dignissimos at doloremque aliquid. Nisi voluptate velit autem
+        <a href="https://developer.mozilla.org/en-US/">aliquam quos assumenda</a
+        >, mollitia id dicta obcaecati debitis molestias vel exercitationem in
+        sed totam voluptatem eaque maxime nesciunt, eligendi est architecto.
+      </p>
+
+      <blockquote>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+        totam explicabo, excepturi hic asperiores nobis molestias in, expedita
+        voluptates praesentium natus officia quas ab ut beatae facilis id
+        molestiae quis. Voluptatibus quod sed repudiandae aspernatur natus
+        tenetur impedit? Dolores laudantium ipsam consequatur in similique
+        quaerat, quibusdam quas quos libero rerum.
+      </blockquote>
+      <ul>
+        <li>Legia</li>
+        <li>CWKS</li>
+        <li>1916</li>
+      </ul>
+      <hr />
+
+      <form>
+        <div class="form-group">
+          <label for="email">
+            <span>Email</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@ex.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">
+            <span>name</span>
+          </label>
+          <input type="text" id="name" name="name" placeholder="Bob Smith" />
+        </div>
+
+        <div class="form-group">
+          <select name="categories" id="categories">
+            <option value="" disabled>Select a category</option>
+            <option value="1">Category 1</option>
+            <option value="2">Category 2</option>
+            <option value="3">Category 3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Sign up</button>
+        </div>
+      </form>
+
+      <br />
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
