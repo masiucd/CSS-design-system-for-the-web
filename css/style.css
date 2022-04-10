@@ -1,7 +1,8 @@
 :root {
   /* Base colors */
-  --yellow-100: #eab308;
-  --yellow-200: #ca8a04;
+  --yellow-100: ##ffc600;
+  --yellow-200: #eab308;
+  --yellow-300: #ca8a04;
   --black: #000000;
   --white: #fff;
   --gray-10: #f3f4f6;
@@ -22,13 +23,17 @@
   /* Colors intentions */
   --background: var(--white);
   --text: var(--blue-200);
-  --border-color: var(--yellow-200);
   --box-background: var(--gray-10);
   --line-color: var(--gray-50);
-  --border-color: var(--yellow-200);
+  --border-color: var(--yellow-100);
   --button-background: var(--yellow-100);
 
   /* Styles */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 5px;
+  --border-radius-xl: 6px;
+  --border-radius-xxl: 8px;
 
   /* fonts */
   --body-font: "IBM Plex Mono", monospace;
@@ -41,6 +46,18 @@
   --h4: 1.563em;
   --h5: 1.25em;
   --smallText: 0.8em;
+
+  /* Elevations */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --shadow-none: 0 0 #0000;
 }
 
 *::after,
@@ -126,6 +143,7 @@ body {
   --text: var(--white);
   --border-color: var(--yellow-100);
   --box-background: var(--blue-100);
+  --line-color: var(--gray-20);
 }
 
 .main {
@@ -143,7 +161,7 @@ a {
 }
 
 blockquote {
-  border-left: 1px solid var(--yellow-200);
+  border-left: 2px solid var(--yellow-200);
   margin: 0;
   padding: 0;
   padding-left: 1em;
@@ -151,6 +169,8 @@ blockquote {
   font-size: 1.25rem;
   line-height: 1.5;
   background-color: var(--box-background);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--border-radius-sm);
 }
 
 /* form */
@@ -172,8 +192,9 @@ select,
 textarea,
 button[type="submit"] {
   border-radius: 4px;
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--line-color);
   padding: 0.3em 0.5em;
+  box-shadow: var(--shadow-md);
 }
 
 .form-group button[type="submit"] {
@@ -183,7 +204,6 @@ button[type="submit"] {
 
 button {
   --button-text: var(--blue-300);
-  --button-border: var(--blue-100);
   cursor: pointer;
   border-radius: 6px;
   font-size: 1rem;
@@ -191,13 +211,15 @@ button {
   margin-top: 0.5em;
   background-color: var(--button-background);
   color: var(--button-text);
-  border: 2px solid var(--button-border);
+  border: 1px solid var(--line-color);
   transition: background-color 0.2s ease-in-out;
+  box-shadow: var(--shadow-md);
 }
 
 button:hover {
   background-color: var(--button-border);
   color: var(--white);
+  box-shadow: var(--shadow-xl);
 }
 
 button.cancel {
