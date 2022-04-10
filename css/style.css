@@ -1,6 +1,6 @@
 :root {
   /* Base colors */
-  --yellow-100: ##ffc600;
+  --yellow-100: #ffc600;
   --yellow-200: #eab308;
   --yellow-300: #ca8a04;
   --black: #000000;
@@ -26,7 +26,7 @@
   --box-background: var(--gray-10);
   --line-color: var(--gray-50);
   --border-color: var(--yellow-100);
-  --button-background: var(--yellow-100);
+  --button-background: var(--yellow-200);
 
   /* Styles */
   --border-radius-sm: 2px;
@@ -146,12 +146,6 @@ body {
   --line-color: var(--gray-20);
 }
 
-.main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0.5rem;
-}
-
 a {
   color: var(--text);
   border-bottom: 2px solid var(--border-color);
@@ -204,6 +198,7 @@ button[type="submit"] {
 
 button {
   --button-text: var(--blue-300);
+  --button-border: var(--blue-300);
   cursor: pointer;
   border-radius: 6px;
   font-size: 1rem;
@@ -211,7 +206,7 @@ button {
   margin-top: 0.5em;
   background-color: var(--button-background);
   color: var(--button-text);
-  border: 1px solid var(--line-color);
+  border: 1px solid var(--button-border);
   transition: background-color 0.2s ease-in-out;
   box-shadow: var(--shadow-md);
 }
@@ -229,7 +224,7 @@ button.cancel {
 }
 
 button.cancel:hover {
-  background-color: var(--red-200);
+  opacity: 0.8;
 }
 
 button[disabled] {
@@ -244,4 +239,65 @@ button[data-theme="theme"] {
   position: fixed;
   top: 20px;
   right: 120px;
+}
+table {
+  margin-bottom: 2em;
+}
+
+main.layout {
+  /* max-width: 900px; */
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.grid {
+  --grid-cols: 2;
+  --gap: 0;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.cols-3 {
+  --grid-cols: 3;
+}
+
+.cols-4 {
+  --grid-cols: 4;
+}
+
+.flex {
+  --justify-content: space-between;
+  display: flex;
+  justify-content: var(--justify-content);
+}
+.flex-around {
+  --justify-content: space-around;
+}
+
+.box {
+  width: 23em;
+  border-radius: var(--border-radius-md);
+  border: 2px solid var(--border-color);
+}
+.box img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: var(--border-radius-md);
+}
+
+@media (min-width: 990px) {
+  main.layout {
+    max-width: 75%;
+  }
+  .gallery {
+    --gap: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 980px) {
+  .gallery {
+    --grid-cols: 1;
+    --gap: 10px;
+  }
 }

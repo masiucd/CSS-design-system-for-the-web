@@ -27,7 +27,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <main class="main">
+    <main class="layout">
       <button class="toggle-button" data-theme="theme">toggle theme</button>
       <h1>Design system CSS</h1>
       <p>
@@ -94,24 +94,41 @@
       </div>
 
       <form>
-        <div class="form-group">
-          <label for="email">
-            <span>Email</span>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="youremail@ex.com"
-          />
+        <div class="grid cols-3">
+          <div class="form-group">
+            <label for="email">
+              <span>Email</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="youremail@ex.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="firstname">
+              <span>First name</span>
+            </label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Bob"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastname">
+              <span>Last name</span>
+            </label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Smith"
+            />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="name">
-            <span>name</span>
-          </label>
-          <input type="text" id="name" name="name" placeholder="Bob Smith" />
-        </div>
-
         <div class="form-group">
           <label for="categories"><span>Category</span></label>
           <select name="categories" id="categories">
@@ -161,6 +178,33 @@
           </tr>
         </tbody>
       </table>
+
+      <div class="gallery grid">
+        <div class="box img">
+          <img
+            src="https://images.unsplash.com/photo-1562847180-fa1e1e8ad242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="kiev"
+          />
+        </div>
+        <div class="box img">
+          <img
+            src="https://images.unsplash.com/photo-1561542320-9a18cd340469?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="kiev"
+          />
+        </div>
+        <div class="box img">
+          <img
+            src="https://images.unsplash.com/photo-1562847181-791567737613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="kiev"
+          />
+        </div>
+        <div class="box img">
+          <img
+            src="https://images.unsplash.com/photo-1559588512-cae70b7dd3d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="kiev"
+          />
+        </div>
+      </div>
     </main>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
