@@ -16,7 +16,8 @@
   --blue-200: #1e293b;
   --blue-300: #0f172a;
   --green: #16a34a;
-  --red: #dc2626;
+  --red-100: #ff5470;
+  --red-200: #dc2626;
 
   /* Colors intentions */
   --background: var(--white);
@@ -25,6 +26,7 @@
   --box-background: var(--gray-10);
   --line-color: var(--gray-50);
   --border-color: var(--yellow-200);
+  --button-background: var(--yellow-100);
 
   /* Styles */
 
@@ -61,6 +63,7 @@ body {
   line-height: 1.75;
   color: var(--text);
   padding-bottom: 400px;
+  transition: background 0.2s, color 0.3s ease-in-out;
 }
 
 p {
@@ -172,13 +175,51 @@ button[type="submit"] {
   border: 2px solid var(--border-color);
   padding: 0.3em 0.5em;
 }
+
 .form-group button[type="submit"] {
-  background-color: var(--yellow-100);
-  color: var(--background);
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 0.2em 0.1em;
-  margin-top: 0.5em;
   width: 12em;
+  font-weight: bold;
+}
+
+button {
+  --button-text: var(--blue-300);
+  --button-border: var(--blue-100);
   cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0.25em 0.45em;
+  margin-top: 0.5em;
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: 2px solid var(--button-border);
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--button-border);
+  color: var(--white);
+}
+
+button.cancel {
+  --button-cancel-background: var(--red-100);
+  background-color: var(--button-cancel-background);
+  color: var(--white);
+}
+
+button.cancel:hover {
+  background-color: var(--red-200);
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+button[data-theme="theme"] {
+  background: none;
+  border: none;
+  position: fixed;
+  top: 20px;
+  right: 120px;
 }
