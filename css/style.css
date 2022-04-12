@@ -22,6 +22,7 @@
 
   /* Colors intentions */
   --background: var(--white);
+  --header-background: var(--gray-10);
   --text: var(--blue-200);
   --box-background: var(--gray-10);
   --line-color: var(--gray-50);
@@ -81,6 +82,21 @@ body {
   transition: background 0.2s, color 0.3s ease-in-out;
 }
 
+header {
+  background-color: var(--header-background);
+  opacity: 0.8;
+  height: 3rem;
+  box-shadow: var(--shadow-md);
+}
+header.header-logo {
+  font-size: var(--base-font-size);
+  margin: 0;
+}
+
+footer {
+  background-color: transparent;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -127,14 +143,6 @@ small,
   font-size: var(--small-text);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--background);
-  color: var(--text);
-  font-family: "Courier New", Courier, monospace;
-}
-
 /* For dark theme */
 .dark {
   --background: var(--blue-200);
@@ -142,6 +150,7 @@ body {
   --border-color: var(--yellow-100);
   --box-background: var(--blue-100);
   --line-color: var(--gray-20);
+  --header-background: var(--blue-100);
 }
 
 a {
