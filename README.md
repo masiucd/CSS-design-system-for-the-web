@@ -59,3 +59,8 @@ Recommended sites for typography.
 
 - [type scale](https://www.type-scale.com)
 - [font pair](https://www.fontpair.co)
+
+### Media queries
+
+Currently we don't have any support for custom properties in media queries.
+Hopefully it will be supported in the future.
