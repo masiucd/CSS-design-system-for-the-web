@@ -24,14 +24,5 @@
     } else {
       enableDarkTheme()
     }
-    // let theme = "light"
-    // if (document.documentElement.classList.contains("dark")) {
-    //   theme = "dark"
-    //   toggleButton.textContent = "🌙"
-    // } else {
-    //   toggleButton.textContent = "☀️"
-    // }
-    // document.documentElement.classList.toggle("dark")
-    // localStorage.setItem("theme", theme)
   })
 })()
