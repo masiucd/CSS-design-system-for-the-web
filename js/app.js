@@ -15,6 +15,8 @@
 
   if (theme === "dark") {
     enableDarkTheme()
+  } else {
+    disableDarkMode()
   }
 
   toggleButton.addEventListener("click", () => {
