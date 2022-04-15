@@ -309,6 +309,52 @@ button[disabled] {
 
 table {
   margin-bottom: 2em;
+  border: 2px solid var(--line-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+}
+thead {
+  background-color: var(--box-background);
+  color: var(--text);
+  font-weight: bold;
+  font-size: var(--base-font-size);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--line-color);
+}
+tr {
+  border-bottom: 2px solid var(--line-color);
+}
+tr td {
+  border-bottom: 1px solid var(--line-color);
+  opacity: 0.8;
+  padding: 0.1em;
+}
+tr td:hover {
+  opacity: 1;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+.card {
+  box-shadow: var(--shadow-md);
+  border-radius: var(--border-radius-md);
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--line-color);
+}
+
+/* First child withing the card */
+/* first item will never have margin top */
+.card > *:first-child {
+  margin-top: 0;
+}
+/* Last child withing the card */
+/* last item will never have margin bottom */
+.card > *:last-child {
+  margin-bottom: 0;
 }
 
 .grid {
