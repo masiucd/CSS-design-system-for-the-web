@@ -23,6 +23,7 @@
   /* Colors intentions */
   --background: var(--white);
   --header-background: var(--gray-10);
+  --footer-background: var(--gray-10);
   --text: var(--blue-200);
   --box-background: var(--gray-10);
   --line-color: var(--gray-50);
@@ -54,8 +55,10 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --shadow-none: 0 0 #0000;
@@ -86,8 +89,8 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--text);
-  padding-bottom: 400px;
   transition: background 0.2s, color 0.3s ease-in-out;
+  height: 100%;
 }
 
 header {
@@ -98,6 +101,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  transition: opacity 2.2s, color 0.3s ease-in-out;
 }
 header .content {
   padding: 0.5rem var(--container-padding);
@@ -133,7 +137,30 @@ header.header-logo {
 }
 
 footer {
-  background-color: transparent;
+  --footer-text-color: var(--base-font-color);
+  background-color: var(--footer-background);
+  padding: 2rem var(--container-padding);
+  text-align: center;
+  margin-top: auto;
+}
+
+footer ul {
+  display: flex;
+  width: 30em;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 1rem;
+}
+footer ul li a {
+  /* bubbles up  */
+  color: var(--footer-text-color);
+}
+
+main.layout {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: calc(1.652em + var(--header-height)) 0;
+  min-height: calc(100vh - var(--header-height));
 }
 
 p {
@@ -190,6 +217,7 @@ small,
   --box-background: var(--blue-100);
   --line-color: var(--gray-20);
   --header-background: var(--blue-100);
+  --footer-background: var(--blue-100);
 }
 
 a {
@@ -281,12 +309,6 @@ button[disabled] {
 
 table {
   margin-bottom: 2em;
-}
-
-main.layout {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: calc(1.652em + var(--header-height)) 0;
 }
 
 .grid {

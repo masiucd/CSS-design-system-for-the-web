@@ -30,16 +30,15 @@
   })
 
   window.addEventListener("scroll", e => {
-    console.log(
-      "document.body.scrollTop",
-      document.body.scrollTop,
-      document.body.offsetTop,
-      document.body.scrollHeight
-    )
-    if (document.body.scrollTop > 0) {
-      document.body.classList.add("scrolled")
+    if (window.scrollY > 55) {
+      document.querySelector("header").style.opacity = 0.85
     } else {
-      document.body.classList.remove("scrolled")
+      document.querySelector("header").style.opacity = 1
     }
   })
+
+  const date = new Date()
+  const year = date.getFullYear()
+  console.log("year", year)
+  document.querySelector("#footer-date").textContent = year
 })()
