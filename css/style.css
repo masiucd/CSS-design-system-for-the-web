@@ -229,6 +229,18 @@ small,
   --footer-background: var(--blue-100);
   --card-background: var(--blue-100);
 }
+.oled {
+  --blue-200: #222;
+  --blue-100: #111;
+  --background: var(--blue-200);
+  --text: var(--white);
+  --border-color: var(--yellow-100);
+  --box-background: var(--blue-100);
+  --line-color: var(--gray-20);
+  --header-background: var(--blue-100);
+  --footer-background: var(--blue-100);
+  --card-background: var(--blue-100);
+}
 
 a {
   color: var(--text);
